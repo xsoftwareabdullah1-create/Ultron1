@@ -37,12 +37,8 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
-
-      - name: Install required Android SDK packages
-        shell: bash
-        run: |
-          set -euo pipefail
-          sdkmanager --install "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+        with:
+          packages: "platform-tools,platforms;android-35,build-tools;35.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
