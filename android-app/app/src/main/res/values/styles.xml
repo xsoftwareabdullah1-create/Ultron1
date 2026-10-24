@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ultron_bg">#071018</color>
+    <color name="ultron_panel">#101F2B</color>
+    <color name="ultron_cyan">#38E8F4</color>
+    <color name="ultron_text">#E8F7FA</color>
+    <color name="ultron_muted">#89AAB4</color>
+    <style name="UltronButton">
+        <item name="android:backgroundTint">#163947</item>
+        <item name="android:textColor">#38E8F4</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>
