@@ -3,127 +3,219 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#071018"
-    android:padding="18dp">
+    android:background="#050B12"
+    android:padding="8dp">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="U L T R O N"
-        android:textColor="#38E8F4"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.18"
-        android:gravity="center"
-        android:paddingTop="10dp" />
-
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MOBILE SYSTEM • READY"
-        android:textColor="#89AAB4"
-        android:textSize="12sp"
-        android:gravity="center"
-        android:paddingTop="5dp"
-        android:paddingBottom="12dp" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:background="#0D1B25"
-        android:layout_marginBottom="12dp">
-
-        <View
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:background="@drawable/hud_orb" />
-
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#091722"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="NEURAL INTERFACE  /  ONLINE"
-            android:textColor="#38E8F4"
-            android:textSize="10sp"
-            android:gravity="center"
-            android:paddingBottom="9dp" />
-    </FrameLayout>
+            android:text="ULTRON"
+            android:textColor="#39E8F4"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:letterSpacing="0.25" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="NEURAL INTERFACE  /  WORKSTATION MODE"
+            android:textColor="#7196A6"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="SYSTEM READY"
+            android:textColor="#39E8F4"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CONVERSATION"
-        android:textColor="#38E8F4"
-        android:textStyle="bold"
-        android:textSize="12sp"
-        android:paddingBottom="7dp" />
-
-    <ScrollView
-        android:id="@+id/chatScroll"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true"
-        android:background="#0A151E"
-        android:padding="12dp">
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp">
 
-        <TextView
-            android:id="@+id/chatText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ULTRON: Systems initialized. Add your Gemini API key in Settings to enable online AI, then send a message or use voice input."
-            android:textColor="#E8F7FA"
-            android:textSize="15sp"
-            android:lineSpacingExtra="5dp" />
-    </ScrollView>
+        <LinearLayout
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#091722"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTROL MATRIX"
+                android:textColor="#39E8F4"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="◈  CORE SYSTEM\n\n◈  AI ENGINE\n\n◈  VOICE LINK\n\n◈  NEURAL MEMORY\n\n◈  PLUGINS"
+                android:textColor="#A8C7D1"
+                android:textSize="11sp"
+                android:lineSpacingExtra="3dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#164354" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOBILE PORT\nAndroid 8.1+"
+                android:textColor="#688A99"
+                android:textSize="9sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/messageInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="Enter command or ask ULTRON..."
-        android:inputType="textCapSentences|textMultiLine"
-        android:maxLines="3"
-        android:minHeight="52dp"
-        android:padding="12dp"
-        android:textColor="#E8F7FA"
-        android:textColorHint="#78939D"
-        android:backgroundTint="#38E8F4" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.95"
+                android:background="#08151F">
+                <View
+                    android:layout_width="154dp"
+                    android:layout_height="154dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/hud_orb" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="◈  HOLOGRAPHIC CORE  ◈"
+                    android:textColor="#39E8F4"
+                    android:textSize="10sp"
+                    android:paddingBottom="6dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  COMMAND CONSOLE"
+                android:textColor="#39E8F4"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp" />
+            <ScrollView
+                android:id="@+id/chatScroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#08131C"
+                android:padding="8dp"
+                android:fillViewport="true">
+                <TextView
+                    android:id="@+id/chatText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ULTRON // CORE INITIALIZED&#10;Awaiting operator command. Configure Gemini in settings to activate the online neural engine."
+                    android:textColor="#D9F1F5"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:lineSpacingExtra="3dp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#091722"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM TELEMETRY"
+                android:textColor="#39E8F4"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI ENGINE       READY\n\nVOICE LINK      STANDBY\n\nNETWORK         ONLINE?\n\nMEMORY          LOCAL\n\nSECURITY        ACTIVE"
+                android:textColor="#8EB0BD"
+                android:textSize="10sp"
+                android:fontFamily="monospace" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#164354" />
+            <Button
+                android:id="@+id/settingsButton"
+                style="@style/UltronButton"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:text="Settings"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="8dp">
-
+        android:gravity="center_vertical"
+        android:background="#091722"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:hint="Enter command / ask ULTRON..."
+            android:singleLine="true"
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:textColor="#E8F7FA"
+            android:textColorHint="#668896"
+            android:textSize="13sp"
+            android:backgroundTint="#39E8F4" />
         <Button
             android:id="@+id/sendButton"
             style="@style/UltronButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Send" />
-
+            android:layout_width="72dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="6dp"
+            android:text="Send"
+            android:textSize="11sp" />
         <Button
             android:id="@+id/voiceButton"
             style="@style/UltronButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="8dp"
-            android:text="Voice" />
-
-        <Button
-            android:id="@+id/settingsButton"
-            style="@style/UltronButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="8dp"
-            android:text="Settings" />
+            android:layout_width="72dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:text="Voice"
+            android:textSize="11sp" />
     </LinearLayout>
 </LinearLayout>
