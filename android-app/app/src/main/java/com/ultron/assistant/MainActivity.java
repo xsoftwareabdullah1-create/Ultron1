@@ -136,7 +136,7 @@ public class MainActivity extends Activity {
     }
 
     private String askGemini(String key, String prompt) throws Exception {
-        URL url = new URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="
+        URL url = new URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key="
                 + java.net.URLEncoder.encode(key, "UTF-8"));
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
